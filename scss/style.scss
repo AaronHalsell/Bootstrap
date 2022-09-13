@@ -1,18 +1,14 @@
-// .carousel-caption {
-//     z-index: 20;
-//     text-align: center;
-//     position: absolute;
-//     top: 40%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     color: white;
-//     text-transform: uppercase;
-//   }
+body {
+  background-color: #212529;
+}
 
-
-  h1 {
+h1 {
     font-size: 8rem;
   }
+
+.whitespace {
+  white-space: nowrap;
+}
  
 .bg-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/kenjitsu.jpg');
@@ -25,8 +21,41 @@
   height: 10vh;
 }
 
-@media only screen and (max-width: 768px) {
+.custom-border-end {
+  border-right: 1px solid #fff;
+}
+
+.custom-border-start {
+  border-left: 1px solid #fff;
+}
+
+.fw-bolder {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 992px) {
     h1 {
       font-size: 5rem;
     }
 }
+
+@media only screen and (max-width: 768px) {
+
+  .custom-border-end, .custom-border-start {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
